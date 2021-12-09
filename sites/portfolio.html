@@ -49,6 +49,66 @@
                 </div>
             </div>
         </div>
+
+        <h2>Customer</h2>
+         <h3>Identification</h3>
+         <p id="identification"></p>
+
+        <h3>Location</h3>
+        <p id="location"></p>
+
+        <h3>Order</h3>
+        <p id="order"></p>
+
+        <h3>RestaurantOrTakeaway</h3>
+        <p id="restaurantortakeaway"></p>
+
+
+
         <script src="javascript.js"></script>
+         <script type="text/javascript">
+
+            const gender = ["male", "women", "anything else"];
+            let customer = {
+                "id": 269,
+                "firstname" : "Pablo",
+                "lastname" : "Hernandes",
+                "gender" : gender[0],
+                "location" :{
+                    "country": "Spanien",
+                    "city": "Barclona",
+                    "street": "Santacarle calle"
+                },
+                "order": {
+                    "coffe": ["Caffè Latte", "Cappuccino", "Espresso", "Latte Maciato", "Café Crème", "Caffè Moca"],
+                    "iced coffe": ["Iced Caffè Latte", "Cold Brew", "Iced Mocha", "Iced White Mocha", "Iced Americano", "Iced Cappuccino"],
+                }
+            }
+
+
+            //identification
+            let htmlObj = document.getElementById("identification");
+            htmlObj.innerHTML =
+                `id: ${customer.id}<br>`+
+                `Name: ${customer.firstname}<br>`+
+                `Vorname: ${customer.lastname}<br>`+
+                `Geschlcht: ${customer.gender}<br>`;
+
+            //Location
+            htmlObj = document.getElementById("location");
+            htmlObj.innerHTML =
+                `Land: ${customer.location.country}<br>`+
+                `Stadt: ${customer.location.city}<br>`+
+                `Strasse: ${customer.location.street}`;
+
+            //order - coffe
+            htmlObj = document.getElementById("order");
+            customer.order.coffe.forEach()
+
+        </script>
+
+
+
+
     </body>
 </html>

@@ -59,3 +59,27 @@ a{
     margin-right: auto;
     width: 20em
 }
+
+h2 {
+    font-size: 43px;
+    text-align:justify;
+    text-align:center;
+    margin-top: 60px;
+}
+
+h3 {
+    font-size: 28px;
+    text-align:justify;
+    text-align:center;
+    margin-top: 60px;
+}
+
+#identification {
+    text-align:justify;
+    text-align:center;
+}
+
+#location{
+    text-align:justify;
+    text-align:center;
+}
