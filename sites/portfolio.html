@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>portfolio</title>
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://use.typekit.net/zzs0yrm.css">
+        <link rel="stylesheet" href="https://use.typekit.net/zzs0yrm.css" lang="ikn">
         <link rel="stylesheet" href="javascript.css">
     </head>
     <body>
@@ -52,15 +53,17 @@
 
         <h2>Customer</h2>
          <h3>Identification</h3>
-         <p id="identification"></p>
+        <p id="identification"></p>
 
         <h3>Location</h3>
         <p id="location"></p>
 
-        <h3>Order</h3>
-        <p id="order"></p>
 
-        <h3>RestaurantOrTakeaway</h3>
+
+        <h3>Produkt</h3>
+        <p id="product"></p>
+
+        <h3>Restaurant or Takeaway</h3>
         <p id="restaurantortakeaway"></p>
 
 
@@ -79,9 +82,13 @@
                     "city": "Barclona",
                     "street": "Santacarle calle"
                 },
-                "order": {
+                "product": {
                     "coffe": ["Caffè Latte", "Cappuccino", "Espresso", "Latte Maciato", "Café Crème", "Caffè Moca"],
                     "iced coffe": ["Iced Caffè Latte", "Cold Brew", "Iced Mocha", "Iced White Mocha", "Iced Americano", "Iced Cappuccino"],
+                },
+                "restaurantortakeaway": {
+                    "restaurant": true,
+                    "aprove": [ "aproved"],
                 }
             }
 
@@ -102,10 +109,26 @@
                 `Strasse: ${customer.location.street}`;
 
             //order - coffe
-            htmlObj = document.getElementById("order");
-            customer.order.coffe.forEach()
+            htmlObj = document.getElementById("product");
+            customer.product.coffe.forEach(coffeid => {
+                htmlObj.innerHTML += `Coffe: ${coffeid}<br>`;
+            })
 
-        </script>
+            //restaurant or takeaway
+
+            let Rot = "Takeawy";
+            if (customer.restaurantortakeaway.restaurant){
+                Rot = "Restaurant";
+            }
+
+            htmlObj = document.getElementById("aprove");
+            let restaurantliste = customer.restaurantortakeaway.aprove;
+            for (let i=0;i<restaurantliste.length;i++){
+                htmlObj.innerHTML += `${Rot}: ${restaurantliste[i]}<br>`;
+            }
+
+
+         </script>
 
 
 
