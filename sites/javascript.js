@@ -59,9 +59,9 @@ function calculate (firstNumber, operator, secondNumber) {
   if (operator === 'divide') return firstNumber / secondNumber
 }
 
-// ========================
-// Testen
-// ========================
+
+// // Testen
+
 function clearCalculator () {
   // Press the clear key
   const clearKey = document.querySelector('[data-type="clear"]')
