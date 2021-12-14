@@ -60,6 +60,19 @@ a{
     width: 20em
 }
 
+.content2 {
+    text-align: justify;
+    text-align-last: center;
+    font-family: "Futura PT";
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
 h2 {
     font-size: 43px;
     text-align:center;
@@ -108,4 +121,13 @@ h3 {
 
 #restaurantortakeaway {
 
+}
+
+.footer {
+    background-color: white;
+    height: 70px;
+}
+
+.p-footer {
+    color: black;
 }
