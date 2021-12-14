@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/zzs0yrm.css" lang="ikn">
+    <link rel="stylesheet" href="javascript.css">
+    <link rel="icon" type="image/png" href="../img/laptop-screen.png">
+</head>
+<body>
+<nav>
+    <div class="nav-items">
+        <a href="../index.html"><img src="../img/toja-logo.png" alt="tojo-logo" id="logo"></a>
+    </div>
+
+    <div class="nav-items">
+        <a href="about.html">About us</a>
+        <a href="portfolio.html">Taschenrechner</a>
+        <a href="JSON-Liste.html">JSON-Liste</a>
+    </div>
+</nav>
+<div class="content">
+    <h2>JSON-Liste</h2>
+
+
+</div>
+
+<h2>Customer</h2>
+
+<div class="customer-content">
+    <div class="customer-section">
+        <div class="one">
+            <h3>Identification</h3>
+            <p id="identification"></p>
+        </div>
+        <div class="two">
+            <h3>Location</h3>
+            <p id="location"></p>
+        </div>
+        <div class="three">
+            <h3>Produkt</h3>
+            <p id="product"></p>
+        </div>
+        <div class="four">
+            <h3>Restaurant or Takeaway</h3>
+            <p id="restaurantortakeaway"></p>
+        </div>
+    </div>
+</div>
+
+
+<script src="javascript.js"></script>
+<script type="text/javascript">
+
+    const gender = ["male", "women", "anything else"];
+    let customer = {
+        "id": 269,
+        "firstname" : "Pablo",
+        "lastname" : "Hernandes",
+        "gender" : gender[0],
+        "location" :{
+            "country": "Spanien",
+            "city": "Barclona",
+            "street": "Santacarle calle"
+        },
+        "product": {
+            "coffe": ["Caffè Latte", "Cappuccino", "Espresso", "Latte Maciato", "Café Crème", "Caffè Moca"],
+            "iced coffe": ["Iced Caffè Latte", "Cold Brew", "Iced Mocha", "Iced White Mocha", "Iced Americano", "Iced Cappuccino"],
+        },
+        "restaurantortakeaway": {
+            "restaurant": true,
+            "aprove": [ "aproved"],
+        }
+    }
+
+
+    //identification
+    let htmlObj = document.getElementById("identification");
+    htmlObj.innerHTML =
+        `id: ${customer.id}<br>`+
+        `Name: ${customer.firstname}<br>`+
+        `Vorname: ${customer.lastname}<br>`+
+        `Geschlcht: ${customer.gender}<br>`;
+
+    //Location
+    htmlObj = document.getElementById("location");
+    htmlObj.innerHTML =
+        `Land: ${customer.location.country}<br>`+
+        `Stadt: ${customer.location.city}<br>`+
+        `Strasse: ${customer.location.street}`;
+
+    //product - coffe
+    htmlObj = document.getElementById("product");
+    customer.product.coffe.forEach(coffeid => {
+        htmlObj.innerHTML += `Coffe: ${coffeid}<br>`;
+    })
+
+    //restaurant or takeaway
+
+    let Rot = "Takeawy";
+    if (customer.restaurantortakeaway.restaurant){
+        Rot = "Restaurant";
+    }
+
+    htmlObj = document.getElementById("aprove");
+    let restaurantliste = customer.restaurantortakeaway.aprove;
+    for (let i=0;i<restaurantliste.length;i++){
+        htmlObj.innerHTML += `${Rot}: ${restaurantliste[i]}<br>`;
+    }
+
+
+</script>
+
+
+
+
+</body>
+</html>
