@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://use.typekit.net/zzs0yrm.css" lang="ikn">
         <link rel="stylesheet" href="javascript.css">
+        <link rel="icon" type="image/png" href="../img/laptop-screen.png">
     </head>
     <body>
         <nav>
@@ -52,20 +53,27 @@
         </div>
 
         <h2>Customer</h2>
-         <h3>Identification</h3>
-        <p id="identification"></p>
 
-        <h3>Location</h3>
-        <p id="location"></p>
-
-
-
-        <h3>Produkt</h3>
-        <p id="product"></p>
-
-        <h3>Restaurant or Takeaway</h3>
-        <p id="restaurantortakeaway"></p>
-
+        <div class="customer-content">
+            <div class="customer-section">
+                <div class="one">
+                    <h3>Identification</h3>
+                    <p id="identification"></p>
+                </div>
+                <div class="two">
+                    <h3>Location</h3>
+                    <p id="location"></p>
+                </div>
+                <div class="three">
+                    <h3>Produkt</h3>
+                    <p id="product"></p>
+                </div>
+                <div class="four">
+                    <h3>Restaurant or Takeaway</h3>
+                    <p id="restaurantortakeaway"></p>
+                </div>
+            </div>
+        </div>
 
 
         <script src="javascript.js"></script>
@@ -108,7 +116,7 @@
                 `Stadt: ${customer.location.city}<br>`+
                 `Strasse: ${customer.location.street}`;
 
-            //order - coffe
+            //product - coffe
             htmlObj = document.getElementById("product");
             customer.product.coffe.forEach(coffeid => {
                 htmlObj.innerHTML += `Coffe: ${coffeid}<br>`;
