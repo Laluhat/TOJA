@@ -4,8 +4,8 @@
         <title>portfolio</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://use.typekit.net/zzs0yrm.css" lang="ikn">
-        <link rel="stylesheet" href="javascript.css">
         <link rel="icon" type="image/png" href="../img/laptop-screen.png">
+        <link rel="stylesheet" href="javascript.css">
     </head>
     <body>
     <nav>
@@ -15,45 +15,33 @@
 
         <div class="nav-items">
             <a href="about.html">About us</a>
-            <a href="Taschenrechner.html">Taschenrechner</a>
+            <a href="Taschenrechner.html">HTML-DOM</a>
             <a href="JSON-Liste.html">JSON-Liste</a>
         </div>
     </nav>
         <div class="content">
-            <h2>Taschenrechner</h2>
+            <h2>BMI Calculator</h2>
 
 
         </div>
 
     <div class="layout">
-        <div class="rechner">
-            <div class="container">
-                <div class="calculator">
-                    <div class="calculator__display">0</div>
-                    <div class="calculator__keys">
-                        <button data-key="plus" data-type="operator">+</button>
-                        <button data-key="minus" data-type="operator">-</button>
-                        <button data-key="times" data-type="operator">&times;</button>
-                        <button data-key="divide" data-type="operator">÷</button>
-                        <button data-key="1" data-type="number">1</button>
-                        <button data-key="2" data-type="number">2</button>
-                        <button data-key="3" data-type="number">3</button>
-                        <button data-key="4" data-type="number">4</button>
-                        <button data-key="5" data-type="number">5</button>
-                        <button data-key="6" data-type="number">6</button>
-                        <button data-key="7" data-type="number">7</button>
-                        <button data-key="8" data-type="number">8</button>
-                        <button data-key="9" data-type="number">9</button>
-                        <button data-key="0" data-type="number">0</button>
-                        <button class="decimal" data-type="number">.</button>
-                        <button class="clear" data-type="clear">C</button>
-                        <button data-key="equal" data-type="equal">=</button>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="content2" id="calculatortxt">
+            <div class="calculator">
+                <p>Height in CM:
+                    <input  id="height" type="text"><label for="height"></label><br><span id="height_error"></span>
+                </p>
+                <p>Weight in KG:
+                    <input id="weight" type="text" ><label for="weight"></label><br><span id="weight_error"></span>
+                </p>
+                <button id="btn">Calculate</button>
+                <p id="output"></p>
+
+            </div>
+
+
+
+        <div class="content2 "id="calculatortxt">
             <p>
                 Calculator
 
@@ -68,7 +56,7 @@
         </div>
     </div>
 
-        <script src="javascript.js"></script>
+<script src="javascript.js"></script>
 
         <footer>
             <div class="footer-content">
@@ -84,5 +72,7 @@
                 <p>copyright &copy;2021 <a href="../index.html">TOJA</a>  </p>
             </div>
         </footer>
+
+
     </body>
 </html>
