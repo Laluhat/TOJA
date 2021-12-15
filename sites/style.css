@@ -64,11 +64,10 @@ nav {
     text-align-last: center;
     font-family: "Futura PT";
     font-size: 20px;
-    margin-left: auto;
-    margin-right: auto;
     width: 20em;
     margin-top: 30px;
     margin-bottom: 30px;
+    padding-bottom: 40px;
 
 }
 
@@ -185,8 +184,8 @@ footer{
 .footer-bottom{
     background: black;
     width: 100vw;
-    padding: 0px;
-    padding-bottom: 0px;
+    padding: 0;
+
 
     text-align: center;
 }
@@ -204,27 +203,38 @@ footer{
 .imgjt {
     width: 400px;
     height: 250px;
-    padding: 40px;
+    border: solid 5px white;
+
 
 }
 
 .janh3{
-    padding: 0px;
+    margin-left: 40px;
     font-size: 40px;
-    padding-bottom: 0;
-    margin-bottom: 0;
+
 }
 
-.janh3{
-    padding: 0px;
+.janh3 {
+    margin-left: 40px;
     font-size: 30px;
-    padding-top: 0;
+
     margin-top: 0;
 }
 
-.jantxt {
-    flex-direction: column;
-    padding: 0;
-
+.layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    padding-bottom: 200px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 0;
 }
 
+#calculatortxt {
+    margin-top: 120px;
+    margin-left: 50px;
+
+}
