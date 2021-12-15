@@ -2,31 +2,30 @@ html{
     color: white;
     font-family: futura-pt, sans-serif;
     height: 100%;
+    margin: 0;
 }
 
 body{
     height: 100%;
-    margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-image: linear-gradient(to bottom right, #8B03FF, #FFD76A);
+    margin: 0;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     margin: 20px;
     height: 70px;
 }
 
-a{
+.nav-items a{
+    margin: 30px;
     text-decoration: none;
     color: white;
     font-size: 40px;
-}
-
-.nav-items a{
-    margin: 30px;
+    font-weight: bold;
 }
 
 #logo{
@@ -68,8 +67,8 @@ a{
     margin-left: auto;
     margin-right: auto;
     width: 20em;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 
 }
 
@@ -110,6 +109,7 @@ h3 {
 
 #location{
     text-align:left;
+
     margin-top: 20px;
 }
 
@@ -123,11 +123,108 @@ h3 {
 
 }
 
-.footer {
+
+footer{
+    margin: 0;
     background-color: white;
-    height: 70px;
+    font-size: 30px;
+    padding: 0;
 }
 
-.p-footer {
-    color: black;
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 10px;
 }
+
+.h4-footer {
+    color: black;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.link-img {
+
+    width: 20px;
+    margin: 0;
+    padding: 3px;
+}
+
+.pfotter {
+    color: black;
+    margin: 0;
+    font-size: 12px;
+    font-family: "Futura PT";
+
+}
+
+.imgrow {
+    display: flex;
+}
+
+.footer-bottom p{
+
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom p a{
+    color:#44bae8;
+    font-size: 16px;
+    text-decoration: none;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+.footer-bottom{
+    background: black;
+    width: 100vw;
+    padding: 0px;
+    padding-bottom: 0px;
+
+    text-align: center;
+}
+
+.team {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    padding: 30px;
+
+}
+
+.imgjt {
+    width: 400px;
+    height: 250px;
+    padding: 40px;
+
+}
+
+.janh3{
+    padding: 0px;
+    font-size: 40px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.janh3{
+    padding: 0px;
+    font-size: 30px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.jantxt {
+    flex-direction: column;
+    padding: 0;
+
+}
+
