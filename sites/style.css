@@ -60,11 +60,16 @@ nav {
 }
 
 .content2 {
-    text-align: justify;
-    text-align-last: center;
+    display: flex;
+    justify-content: center;
     font-family: "Futura PT";
     font-size: 20px;
+}
+
+.content2 p{
     width: 20em;
+    text-align: center;
+    margin: 50px;
 }
 
 h2 {
