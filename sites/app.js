@@ -15,20 +15,14 @@ htmlObj.innerHTML =
 
 //product - coffe
 htmlObj = document.getElementById("product");
-customer.product.coffe.forEach(coffeid => {
+customer.drinks.coffe.forEach(coffeid => {
     htmlObj.innerHTML += `Coffe: ${coffeid}<br>`;
 })
 
 //restaurant or takeaway
 
-let Rot = "Takeawy";
-if (customer.restaurantortakeaway.restaurant){
-    Rot = "Restaurant";
-}
-
-htmlObj = document.getElementById("aprove");
-let restaurantliste = customer.restaurantortakeaway.aprove;
-for (let i=0;i<restaurantliste.length;i++){
-    htmlObj.innerHTML += `${Rot}: ${restaurantliste[i]}<br>`;
-}
+htmlObj = document.getElementById("food");
+customer.food.sweet.forEach(foodid => {
+    htmlObj.innerHTML += `Food: ${foodid}<br>`;
+})
 

@@ -111,6 +111,7 @@ h3 {
     text-align:left;
 
     margin-top: 20px;
+
 }
 
 #product{
@@ -119,7 +120,9 @@ h3 {
     margin-top: 20px;
 }
 
-#restaurantortakeaway {
+#food{
+    text-align:left;
+    margin-top: 20px;
 
 }
 
@@ -217,17 +220,19 @@ footer{
 
 
 }
+.jantxt{
+    margin-left: 40px;
+    justify-content: left;
+    text-align: left;
+}
 
 .janh3{
-    margin-left: 40px;
     font-size: 40px;
 
 }
 
 .janh3 {
-    margin-left: 40px;
     font-size: 30px;
-
     margin-top: 0;
 }
 
@@ -243,4 +248,12 @@ footer{
 #calculatortxt {
     margin-left: 50px;
 
+}
+
+.two {
+    margin-left: 30px;
+}
+
+.four {
+    margin-left: 30px;
 }
