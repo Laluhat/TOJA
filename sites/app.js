@@ -2,8 +2,8 @@
 let htmlObj = document.getElementById("identification");
 htmlObj.innerHTML =
     `id: ${customer.id}<br>`+
-    `Name: ${customer.firstname}<br>`+
-    `Vorname: ${customer.lastname}<br>`+
+    `Vorname: ${customer.firstname}<br>`+
+    `Name: ${customer.lastname}<br>`+
     `Geschlcht: ${customer.gender}<br>`;
 
 //Location
