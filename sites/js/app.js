@@ -20,7 +20,6 @@ customer.drinks.coffe.forEach(coffeid => {
 })
 
 //restaurant or takeaway
-
 htmlObj = document.getElementById("food");
 customer.food.sweet.forEach(foodid => {
     htmlObj.innerHTML += `Food: ${foodid}<br>`;
